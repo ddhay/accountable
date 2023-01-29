@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>Accountable</title>
+  </head>
+  <body>
+    <!-- add class to header when navigation open in mobile view:  nav-open will be added and removed(see queries.css-mobil navigation and script.js ) using javascript when menu button in mobile view is clicked-->
+    <header class="header ">
+      <img class="logo" src="Assets/Logo.svg" />
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#">Feed </a></li>
+          <li><a class="nav-link" href="#">Milestones </a></li>
+          <li><a class="nav-link" href="#">Groups </a></li>
+        </ul>
+      </nav>
+
+      <div class="owner">
+        <img class="notification-icon" src="Assets/Notification.svg" />
+        <img src="Assets/User Avatar 01.svg" />
+        <p class="owner-name">Evans Jerry</p>
+      </div>
+
+      <button class="btn-mobile-nav">
+        
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav"  name="close-outline"></ion-icon>
+      </button>
+
+    </header>
+    <container class="container">
+      <section class="section-milestones">
+        <h2 class="milestones">Milestones</h2>
+        <div class="users">
+          <img class="user-02" src="Assets/User Avatar 02.svg" />
+          <p class="user-text">
+            Accountable has now raised $24m in seed funds!
+          </p>
+          <!-- <img class="reaction-img" src="Assets/Reaction.svg" /> -->
+        </div>
+
+        <div class="users">
+          <img class="user-03" src="Assets/User Avatar 03.svg" />
+          <p class="user-text">
+            Quit my job to work full time on my side project
+          </p>
+        </div>
+        <div class="users">
+          <img class="user-04" src="Assets/User Avatar 04.svg" />
+          <p class="user-text">Reached $2400 ARR, baby steps</p>
+        </div>
+        <div class="users">
+          <img class="user-05" src="Assets/User Avatar 05.svg" />
+          <p class="user-text">Hired our first employee in our startup</p>
+        </div>
+
+        <a class="view" href="#">View all milestones &RightArrow;</a>
+      </section>
+
+      <section class="section-share">
+        <div class="share">
+          <div class="share-comment">
+            <img class="evans" src="Assets/User Avatar 01.svg" />
+            <div class="share-text-img">
+              <p class="share-text">Share what you've been working on...</p>
+              <img src="Assets/Add Image.svg" />
+            </div>
+          </div>
+          <div class="reports">
+          <div class="customer-report">
+            <div class="bay">
+              <img class="bay-img" src="Assets/User Avatar 04-1.svg" />
+              <div class="comment">
+                <p class="melissa-name">Melissa Bay</p>
+                <p>3h ago</p>
+              </div>
+            </div>
+            <div class="report">
+              <img src="Assets/Report.svg" />
+              <a class="report-link" href="#">
+                <p class="report-text">Report</p>
+              </a>
+            </div>
+          </div>
+          <div>
+            <p class="bay-report">
+              I've always been a perfectionist, but lately I've been dabbling
+              with the idea of just releasing my product an iterating as I go.
+            </p>
+            <div class="comments-reactions">
+              <div class="comments">
+                <img src="Assets/Comments.svg" />
+                <a class="comments-reactions-link" href="#">
+                  <p>11 comments</p>
+                </a>
+              </div>
+
+              <div class="reactions">
+                <img src="Assets/Reaction.svg" />
+                <a class="comments-reactions-link" href="#">
+                  <p>24 reactions</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="customer-report">
+            <div class="bay">
+              <img class="bay-img" src="Assets/User Avatar 06.svg" />
+              <div class="comment">
+                <p class="melissa-name">David Rug</p>
+                <p>6h ago</p>
+              </div>
+            </div>
+            <div class="report">
+              <img src="Assets/Report.svg" />
+              <a class="report-link" href="#">
+                <p class="report-text">Report</p>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="practice"> <img class="practice-img" src="Assets/Image.png" />
+
+          <p class="practice-text">Just released a blog on how and where to practice your frontend development skills.  It's a list of 7 websites</p>
+
+           <div class="comments-reactions">
+              <div class="comments">
+                <img src="Assets/Comments.svg" />
+                <a class="comments-reactions-link" href="#">
+                  <p>36 comments</p>
+                </a>
+              </div>
+
+              <div class="reactions">
+                <img src="Assets/Reaction.svg" />
+                <a class="comments-reactions-link" href="#">
+                  <p>121 reactions</p>
+                </a>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="section-hero">
+        <div>
+        <img class="feed-photo" src="Assets/Feed Page - photo-2.png" />
+        </div>
+        <div>
+        <h2 class="trending">
+          <svg xmlns="http://www.w3.org/2000/svg" class="trending-icon" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd" />
+</svg>Trending Posts</h2>
+        </div>
+        <div class="trending-posts">
+        <div class="website-list">
+          <p class="list-text">  A list of websites to practice your skills.</p>
+        <div class="client-post">
+        <p>David Rug</p>
+        <p>6h ago</p>
+        </div>
+        </div>
+
+        <div class="website-list">
+          <p class="list-text">  Migrating to
+            next.js has been the best move.</p>
+        <div class="client-post">
+        <p>May Day</p>
+        <p>6h ago</p>
+        </div>
+        </div>
+
+        <div class="website-list">
+          <p class="list-text"> Referral Marketing grew our project by 240%.</p>
+        <div class="client-post">
+        <p>Sara Jack</p>
+        <p>6h ago</p>
+        </div>
+        </div>
+        </div>
+
+      <a class="view" href="#">View all stories &RightArrow;</a>
+        <!-- <p>A lst of websites to practice your skills.</p>
+        <p>David Rug</p>
+        <p>6h ago</p>
+      </div>
+
+
+        <p>Migreating to Next.js has been the best move.</p>
+        <p> May Day</p>
+        <p>2d ago</p>
+        <p>Referral Marketing grew our project
+          by 240%</p>
+          <p>Sara Jack</p>
+          <p>4h ago</p>
+
+          <a class="view" href="#">View all stories &RightArrow;</a>
+      </div> -->
+
+      </section>
+    </container>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
